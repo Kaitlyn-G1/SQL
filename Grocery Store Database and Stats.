@@ -1,0 +1,18 @@
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, aisle INTEGER); 
+INSERT INTO store VALUES (1, "Scarf", 5,4.99, 1); 
+INSERT INTO store VALUES (2, "hat", 6, 16, 1);
+INSERT INTO store VALUES (3, "sunglasses", 4, 7.99, 8);
+INSERT INTO store VALUES (4, "necklaces", 14, 10.99, 8); 
+INSERT INTO store VALUES (5, "bracelets", 8, 5.99, 8);
+INSERT INTO store VALUES (6, "rings", 7, 12.99, 8);
+INSERT INTO store VALUES (7, "pants", 18, 19.99, 6);
+INSERT INTO store VALUES (8, "shorts", 22, 18.99, 6);
+INSERT INTO store VALUES (9, "leggings", 16, 17, 6);
+INSERT INTO store VALUES (10, "dresses", 15, 25.99, 4);
+INSERT INTO store VALUES (11, "tank tops", 48, 4.99, 5);
+INSERT INTO store VALUES (12, "long sleeve shirts", 17, 26, 2);
+INSERT INTO store VALUES (13, "t-shirts", 56, 10.99, 2);
+INSERT INTO store VALUES (14, "sweaters", 6, 22, 3);
+INSERT INTO store VALUES (15, "jumpsuits", 32, 48, 7);
+
+SELECT * FROM store WHERE quantity > 5 ORDER BY price 
